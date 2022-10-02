@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">⭐ Carousel ⭐</div>
+      <div class="spacer-h"></div>
+      <div class="middle">
+        <div class="left">
+          <img id="left-img" src="./assets/milky-way.jpg" />
+        </div>
+        <div class="spacer-v"></div>
+        <div class="center" >
+          <div class="small"id="ex1">
+            <img class="picture" src="./assets/saturn.jpg" />
+          </div>
+        </div>
+        <div class="spacer-v"></div>
+        <div class="right">
+          <img id="right-img" src="./assets/black-hole.jpg" />
+        </div>
+      </div>
+      <div class="spacer-h"></div>
+      <div class="footer">
+        <p>
+          You can use the
+          <span><i class="fa-solid fa-arrow-left arrow"></i></span> and
+          <span><i class="fa-solid fa-arrow-right arrow"></i></span> keys to
+          navigate or interact with your mouse.
+        </p>
+        <div class="social">
+            <a href="https://github.com/Gjeev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/jeevika_28/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./jquery.zoom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#ex1").zoom();
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/84bc5e87e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./main.js"></script>
+  </body>
+</html>
